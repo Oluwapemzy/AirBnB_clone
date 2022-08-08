@@ -5,7 +5,7 @@ Base Module for AirBnB clone Project
 
 from datetime import datetime
 from uuid import uuid4
-
+import models
 
 class BaseModel():
     """
@@ -27,6 +27,7 @@ class BaseModel():
             self.id = str(uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            models.storage.new(self)
 
     def __str__(self):
         """return str representation"""
@@ -39,6 +40,7 @@ class BaseModel():
         updated_at with the current datetime
         """
         self.updated_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """Return dict"""

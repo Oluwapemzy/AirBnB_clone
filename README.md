@@ -6,7 +6,7 @@ This is a team project part of ALX Full stack Software Engineering Program
 ## Usage
 
 To launch the console application in interactive mode simply run:
-
+Abeg do
 `./console.py`
 
 To run in the non-interactive mode:

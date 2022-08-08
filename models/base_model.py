@@ -33,7 +33,7 @@ class BaseModel():
 
     def to_dict(self):
         """Return dict"""
-        gdict = delf.__dict__.copy()
+        gdict = self.__dict__.copy()
         gdict["created_at"] = self.created_at.isoformat()
         gdict["updated_at"] = self.updated_at.isoformat()
         gdict["__class__"] = self.__class__.__name__

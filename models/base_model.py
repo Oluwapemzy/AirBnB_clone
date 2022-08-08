@@ -1,7 +1,7 @@
 #!usr/bin/python3
 """
 Base Module for AirBnB clone Project
-""" 
+"""
 
 from datetime import datetime
 from uuid import uuid4
@@ -26,7 +26,7 @@ class BaseModel():
 
     def save(self):
         """
-        updates the public instance attribute 
+        updates the public instance attribute
         updated_at with the current datetime
         """
         self.updated_at = datetime.now()

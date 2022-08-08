@@ -46,3 +46,33 @@ To execute all unit tests, run:
 `python3 -m unittest discover tests `
 from the root directory. Adding option `-v` reduces verbosity of the results
 
+## File Descriptions
+
+### console, model and storage
+
+- [console.py](console.py) - the console contains the entry point of the command interpreter.
+- [base_model.py](models/base_model.py) - The BaseModel class from which future classes will be derived
+- [file_storage.py](models/engine/file_storage.py) - serializes instances to a JSON file & deserializes back to instances
+- [amenity.py](models/amenity.py) - class that inherits from BaseModel class.
+- [city.py](models/city.py) - class that inherits from BaseModel class.
+- [place.py](models/place.py) - class that inherits from BaseModel class.
+- [review.py](models/review.py) - class that inherits from BaseModel class.
+- [state.py](models/state.py) - class that inherits from BaseModel class.
+- [user.py](models/user.py) - class that inherits from BaseModel class.
+
+### Tests
+
+- [test_console.py](tests/test_console.py) - Contains tests for the console module.
+- [test_base_model.py](tests/test_models/test_base_model.py) - Contains the tests for the BaseModel class
+- [test_file_storage.py](tests/test_models/test_file_storage.py) - Contains the tests of the FileStorage class
+- [test_amenity.py](tests/test_models/test_amenity.py) - Contains the tests for the Amenity class
+- [test_city.py](tests/test_models/test_city.py) - Contains the tests for the City class:
+- [test_place.py](tests/test_models/test_place.py) - Contains the tests for the Place class
+- [test_review.py](tests/test_models/test_review.py) - Contains the tests for the Review class
+- [test_state.py](tests/test_models/test_state.py) - Contains the tests for the State class
+- [test_user.py](tests/test_models/test_user.py) - Contains the tests for the User class
+
+## Authors
+
+- Charles David
+- Oluwapelumi Ojelabi

@@ -6,3 +6,4 @@
 class Main():
     """enter"""
     id = 343
+    age = 63

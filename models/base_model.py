@@ -16,8 +16,8 @@ class BaseModel():
         Initializes the class BaseModel
         """
         self.id = str(uuid4())
-        created_at = datetime.now()
-        updated_at = datetime.now()
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
 
     def __str__(self):
         """return str representation"""

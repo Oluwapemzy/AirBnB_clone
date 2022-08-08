@@ -9,10 +9,8 @@ from models.base_model import BaseModel
 
 class FileStorage():
     """Class FileStorage"""
-
-    def __init__(self, *args):
-        self.__file_path = "file.json"
-        self.__objects = {}
+    __file_path = "file.json"
+    __objects = {}
 
     def all(self):
         """return dict __objects"""
@@ -21,7 +19,7 @@ class FileStorage():
     def new(self, obj):
         """set in __object obj with key objclassname.id"""
         obj_name = obj.__class__.__name__
-        self.__objects[obj_name.obj.id] = obj
+        self.__objects[f"{obj_name}.{obj.id}"] = obj
 
     def save(self):
         """serialize __objects to JSON file __file_path"""
